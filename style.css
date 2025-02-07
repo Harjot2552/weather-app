@@ -5,3 +5,7 @@
     box-sizing: border-box;
     font-family: 'Poppins', "Arial";
 }
+
+body {
+    background-color: #222;
+}
