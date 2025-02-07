@@ -17,7 +17,7 @@
         <div class="error">
             <p>Invalid City Name</p>
         </div>
-        
+
         <div class="weather">
             <img src="images/rain.png" alt="" class="weather-icon">
             <h1 class="temp">22°C</h1>
@@ -41,7 +41,7 @@
         </div>
     </div>
 
-    
+
 
     <script>
         const apiKey = "26093b9d254b75fa7138df4e692a3243";
@@ -67,7 +67,7 @@
                 document.querySelector(".humidity").innerHTML = data.main.humidity + "%";
                 document.querySelector(".wind").innerHTML = data.wind.speed + " km/h";
 
-                
+
                 if (data.weather[0].main == "Clouds") {
                     weatherIcon.src = "images/clouds.png"
                 }
@@ -97,15 +97,18 @@
 
         const input = document.getElementById("myInput");
 
-input.addEventListener("keyup", function (event) {
-    if (event.keyCode === 13) {
-        event.preventDefault();
-        document.getElementById("myBtn").click();
-    }
-});
+        input.addEventListener("keyup", function (event) {
+            if (event.keyCode === 13) {
+                event.preventDefault();
+                document.getElementById("myBtn").click();
+            }
+        });
 
-   
 
+
+        searchBtn.addEventListener("click", () => {
+            checkWeather(searchBox.value);
+        })
     </script>
 
 </body>
