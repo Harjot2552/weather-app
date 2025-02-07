@@ -73,3 +73,21 @@ body {
     margin-top: -10px;
 
 }
+
+
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    margin-top: 50px;
+
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    text-align: left;
+
+}
